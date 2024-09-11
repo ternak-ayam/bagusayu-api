@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\V1\Product\ProductController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -18,3 +19,6 @@ Route::post('login', [\App\Http\Controllers\Api\V1\Auth\LoginController::class, 
 
 Route::get('/admin/marketing', [\App\Http\Controllers\Api\V1\Marketing\MarketingController::class, 'index']);
 Route::post('/admin/marketing', [\App\Http\Controllers\Api\V1\Marketing\MarketingController::class, 'store']);
+
+Route::get('products', [ProductController::class, 'index']);
+Route::get('products/best-sellers', [ProductController::class, 'bestSellers']);
