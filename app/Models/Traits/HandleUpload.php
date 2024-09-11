@@ -82,7 +82,7 @@ trait HandleUpload
     public function getImageUrl(): string
     {
         if(! $this->hasImage()) {
-            return 'https://www.pngitem.com/pimgs/m/22-223968_default-profile-picture-circle-hd-png-download.png';
+            return asset('assets/images/examples/500x250.png');
         }
 
         return Storage::disk($this->getImageDisk())->url($this->getFullImagePath());

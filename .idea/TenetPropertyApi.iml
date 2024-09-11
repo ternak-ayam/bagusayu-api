@@ -134,6 +134,23 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/psr/clock" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/psr/cache" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/lcobucci/jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/cache-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/carbonphp/carbon-doctrine-types" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/lcobucci/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/var-exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/dflydev/dot-access-data" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/google/grpc-gcp" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/google/longrunning" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/google/gax" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/google/common-protos" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/league/config" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/google/protobuf" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/grpc/grpc" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/nette/utils" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/nette/schema" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/beste/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/beste/json" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

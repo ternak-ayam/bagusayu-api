@@ -13,7 +13,7 @@
 
     <x-content>
         <x-slot name="modul">
-            <h1>Barang Keluar</h1>
+            <h1>Produk</h1>
         </x-slot>
 
         <x-section>
@@ -21,7 +21,7 @@
             </x-slot>
 
             <x-slot name="header">
-                <h4>Data Barang Keluar</h4>
+                <h4>Data Produk</h4>
                 <div class="card-header-form row">
                     <div>
                         <form>
@@ -35,7 +35,7 @@
                         </form>
                     </div>
                     <div class="ml-2">
-                        <a href="#" class="btn btn-sm btn-primary">
+                        <a href="{{ route('admin.products.create') }}" class="btn btn-sm btn-primary">
                             Tambah Data <i class="fas fa-plus"></i>
                         </a>
                     </div>
@@ -48,32 +48,27 @@
                         <thead>
                         <tr>
                             <th>No</th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Roles</th>
+                            <th>Nama</th>
+                            <th>Unit</th>
+                            <th>Harga</th>
                             <th style="width:150px">Action</th>
                         </tr>
                         </thead>
                         <tbody>
-                        @forelse([] as $user)
+                        @forelse($products as $product)
                             <tr>
-                                <td>{{ $loop->index + $users->firstItem() }}</td>
-                                <td>{{ $user->name }}</td>
-                                <td>{{ $user->email }}</td>
+                                <td>{{ $loop->index + $products->firstItem() }}</td>
+                                <td>{{ $product->name }}</td>
+                                <td>{{ $product->unit }}</td>
+                                <td>{{ $product->price }}</td>
                                 <td>
-                                    <a href="#"
+                                    <a href="{{ route('admin.products.edit', $product->id) }}"
                                        class="btn btn-icon btn-sm btn-primary" data-toggle="tooltip"
                                        data-placement="top" title="" data-original-title="Edit">
                                         <i class="far fa-edit"></i>
                                     </a>
-                                    <a href="#"
-                                       class="btn btn-icon btn-sm btn-info" data-toggle="tooltip" data-placement="top"
-                                       title="" data-original-title="Detail">
-                                        <i class="fas fa-info-circle"></i>
-                                    </a>
-
                                     <a href="javascript:;" data-url="#"
-                                       data-id="{{ $user->id }}" data-redirect="#"
+                                       data-id="{{ $product->id }}" data-redirect="#"
                                        class="btn btn-sm btn-danger delete">
                                         <i class="fas fa-times"></i>
                                     </a>
@@ -92,7 +87,7 @@
             </x-slot>
 
             <x-slot name="footer">
-{{--                {{ $users->onEachSide(2)->appends($_GET)->links('admin.partials.pagination') }}--}}
+{{--                {{ $products->onEachSide(2)->appends($_GET)->links('admin.partials.pagination') }}--}}
             </x-slot>
         </x-section>
 
