@@ -16,6 +16,7 @@ Route::group([], function () {
      Route::get('/', [ProductController::class, 'index'])->name('index');
      Route::get('create', [ProductController::class, 'create'])->name('create');
      Route::get('{product}/edit', [ProductController::class, 'edit'])->name('edit');
+     Route::get('{product}/delete', [ProductController::class, 'destroy'])->name('delete');
      Route::post('/', [ProductController::class, 'store'])->name('store');
      Route::put('{product}', [ProductController::class, 'update'])->name('update');
    });

@@ -67,7 +67,7 @@
                                        data-placement="top" title="" data-original-title="Edit">
                                         <i class="far fa-edit"></i>
                                     </a>
-                                    <a href="javascript:;" data-url="#"
+                                    <a href="{{ route('admin.products.delete', $product->id) }}"
                                        data-id="{{ $product->id }}" data-redirect="#"
                                        class="btn btn-sm btn-danger delete">
                                         <i class="fas fa-times"></i>
